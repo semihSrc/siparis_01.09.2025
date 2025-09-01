@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE32491B-E32D-49EF-8E10-6DF5E0AED4B5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OzayPlise</RootNamespace>
+    <AssemblyName>OzayPlise</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Aski_15mm_Perde.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Esiksiz_27mm_Kesim.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Esiksiz_Kesim.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Gece_Gunduz_15mm_Perde.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Icden_Takma_Plise_Kesim.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Kedi_Sinekligi_27mm_Kesim.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Miknatisli_18mm_Kesim.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Miknatisli_27mm_Kesim.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Oval_Karava_Kesim.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Plise17x25Kesim.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Plise27mm.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Portray_15mm_Perde.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Slim_Aski_Perde.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Slim_Vida_Perde.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Slim_Yapistirma_Perde.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Surme_Kesim.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Vidali_15mm_Perde.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Yapistirma_15mm_Perde.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\Aski_15mm_Perde_Maaliyet.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\Karavan_Oval_Kasa_Sineklik\Karavan_Oval_Kasa.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\Karavan_Oval_Kasa_Sineklik\Karavan_Oval_Kasa_Dikey.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\Karavan_Oval_Kasa_Sineklik\Karavan_Oval_Kasa_Ort.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\Karavan_Oval_Kasa_Sineklik\Karavan_Oval_Kasa_Yatay.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\Portray_15mm_Perde_Maaliyet.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\SineklikMaaliyetHesaplama\Sineklik_Hesaplama.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\Slim_Aski_Perde_Maaliyet.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\Slim_Perde_Vidali_Maaliyet.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\Slim_Yapistirma_Perde_Maaliyet.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\SurmeMaaliyet.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\Vidali_15mm_Perde_Maaliyet.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\Yapistirma_15mm_Perde_Maaliyet.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_18mm_Icten_Takma\_18mm_Icten_Takma_Dikey.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_18mm_Icten_Takma\_18mm_Icten_Takma_Maaliyet.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_18mm_Icten_Takma\_18mm_Icten_Takma_Ort.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_18mm_Icten_Takma\_18mm_Icten_Takma_Yatay.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_18mm_Sineklik_Kapi\_18mm_Dikey_Sineklik_Kapi.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_18mm_Sineklik_Kapi\_18mm_Ort_Sineklik_Kapi.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_18mm_Sineklik_Kapi\_18mm_Sineklik_Kapi.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_18mm_Sineklik_Kapi\_18mm_Yatay_Sineklik_Kapi.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_27mm_Kanallı_Kedi_Sineklik\_27mm_Kanalli_Kedi.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_27mm_Kanallı_Kedi_Sineklik\_27mm_Kanalli_Kedi_Sineklik_Dikey.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_27mm_Kanallı_Kedi_Sineklik\_27mm_Kanalli_Kedi_Sineklik_Ort.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_27mm_Kanallı_Kedi_Sineklik\_27mm_Kanalli_Kedi_Sineklik_Yatay.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_27mm_Sineklik_Kapi\Dolar\_27mm_Dikey_Sineklik_Kapi_Dolar.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_27mm_Sineklik_Kapi\Dolar\_27mm_Ort_Sineklik_Kapi_Dolar.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_27mm_Sineklik_Kapi\Dolar\_27mm_Sineklik_Kapi_Dolar.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_27mm_Sineklik_Kapi\Dolar\_27mm_Yatay_Sineklik_Kapi_Dolar.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_27mm_Sineklik_Kapi\Euro\_27mm_Dikey_Sineklik_Kapi_Euro.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_27mm_Sineklik_Kapi\Euro\_27mm_Ort_Sineklik_Kapi_Euro.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_27mm_Sineklik_Kapi\Euro\_27mm_Sineklik_Kapi_Euro.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_27mm_Sineklik_Kapi\Euro\_27mm_Yatay_Sineklik_Kapi_Euro.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_27mm_Sineklik_Kapi\_27mm_Dikey_Sineklik_Kapi.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_27mm_Sineklik_Kapi\_27mm_Ort_Sineklik_Kapi.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_27mm_Sineklik_Kapi\_27mm_Sineklik_Kapi.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\_27mm_Sineklik_Kapi\_27mm_Yatay_Sineklik_Kapi.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\18mm_Karavan_Perde\Karavan_18mm.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\18mm_Karavan_Perde\_18mm_Karavan_Perde_Dikey.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\18mm_Karavan_Perde\_18mm_Karavan_Perde_Ort.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\18mm_Karavan_Perde\_18mm_Karavan_Perde_Yatay.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\PerdeMaaliyetHesaplama\GeceGunduzPerdeMaaliyet.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\SineklikMaaliyetHesaplama\Dikey_SineklikMaaliyetHesaplama.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\SineklikMaaliyetHesaplama\OrtBirlesim_SineklikMalliyetHesaplama.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\SineklikMaaliyetHesaplama\Yatay_SineklikMaaliyetHesaplama.cs" />
+    <Compile Include="Classes\Interfaces\ISineklik2.cs" />
+    <Compile Include="Classes\Other\AesEncryption.cs" />
+    <Compile Include="Classes\Other\Ayarlar.cs" />
+    <Compile Include="Classes\Other\DatabaseHelper.cs" />
+    <Compile Include="Classes\Hesaplamalar\KesimHesaplama\Plise18mm.cs" />
+    <Compile Include="Classes\Interfaces\ISineklik.cs" />
+    <Compile Include="Classes\AbstractClasses\Sineklik.cs" />
+    <Compile Include="Classes\Other\Lisans.cs" />
+    <Compile Include="Classes\Other\Malzeme.cs" />
+    <Compile Include="Classes\Hesaplamalar\MaaliyetHesaplama\PerdeMaaliyetHesaplama\PerdeMaaliyetHesaplama.cs" />
+    <Compile Include="FirstLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstLogin.Designer.cs">
+      <DependentUpon>FirstLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\FiyatDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\FiyatDegistir.Designer.cs">
+      <DependentUpon>FiyatDegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FiyatListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\FiyatListesi.Designer.cs">
+      <DependentUpon>FiyatListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FormulDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\FormulDegistir.Designer.cs">
+      <DependentUpon>FormulDegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FormulListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\FormulListesi.Designer.cs">
+      <DependentUpon>FormulListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\KesimOlcuForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\KesimOlcuForm1.Designer.cs">
+      <DependentUpon>KesimOlcuForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\KesimOlcuForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\KesimOlcuForm2.Designer.cs">
+      <DependentUpon>KesimOlcuForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MaaliyetOlcuForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\MaaliyetOlcuForm1.Designer.cs">
+      <DependentUpon>MaaliyetOlcuForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MaaliyetOlcuForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\MaaliyetOlcuForm2.Designer.cs">
+      <DependentUpon>MaaliyetOlcuForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MaaliyetOlcuForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\MaaliyetOlcuForm3.Designer.cs">
+      <DependentUpon>MaaliyetOlcuForm3.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FirstLogin.resx">
+      <DependentUpon>FirstLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControls\FiyatDegistir.resx">
+      <DependentUpon>FiyatDegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FiyatListesi.resx">
+      <DependentUpon>FiyatListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FormulDegistir.resx">
+      <DependentUpon>FormulDegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FormulListesi.resx">
+      <DependentUpon>FormulListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\KesimOlcuForm1.resx">
+      <DependentUpon>KesimOlcuForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\KesimOlcuForm2.resx">
+      <DependentUpon>KesimOlcuForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MaaliyetOlcuForm1.resx">
+      <DependentUpon>MaaliyetOlcuForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MaaliyetOlcuForm2.resx">
+      <DependentUpon>MaaliyetOlcuForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MaaliyetOlcuForm3.resx">
+      <DependentUpon>MaaliyetOlcuForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo2.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

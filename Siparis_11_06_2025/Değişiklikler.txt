@@ -1,0 +1,15 @@
+# Changelog
+
+## [1.0.1] - 2025-06-11
+
+### 🔑 Keygen
+- Panoya kopyalama işlemi sonrası kullanıcıya bildirim gösterimi eklendi.
+
+### 🖥️ Program
+
+#### Genel
+- Ana sayfaya logo eklendi.
+
+#### Maaliyet ve Kesim Ölçümü Sayfaları
+- Hesaplananlar listesinde istenilen ölçülerin kaldırılabilmesi sağlandı.
+- Hesaplananlar listesini yazdırma özelliği eklendi.
